@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    background-image: url(hatter.jpg);
+    width: 600px;
+    color: black;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr fr 1fr;
+    grid-template-areas: 
+    'h h h'
+    'as as as'
+    'ar ar ar'
+    'f f f';
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        display: block;
+    }
+    article {
+        text-align: justify;
+        border: 2px black;
+        margin: 5px;
+        background-color: grey;
+        padding: 6px;
+    }
+    ul {
+        border: 2px black;
+        margin: 5px;
+        background-color: whitesmoke;
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+header {
+    grid-area: h;
+    margin: 15px;
+    height: 400px;
+    width: auto;
+    
+}
+
+h1 {
+    font-size: 32pt;
+    color: white;
+    text-align: Center;
+    padding-right: 15px;
+    margin-top: 100px;
+}
+
+aside {
+    grid-area: as;
+}
+
+article {
+    grid-area: ar;
+    text-align: justify;
+    border: 2px black;
+    margin: 20px 20px 20px 20px;
+    background-color: gray;
+    padding: 5px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    grid-area: f;
+    text-align: center;
+    background-color: grey;
+    border: 2px black;
+    margin: 20px 20px 20px 20px;
+}
+
+
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    border: 10px black;
+    margin: 20px 0 20px 20px;
+    background-color: gray;
+    padding: 5px;
+    text-align: center;
+}
+th {
+    text-align: center;
+}
+img {
+    height: auto;
+    width: auto;
+    float: none;
+}
+
