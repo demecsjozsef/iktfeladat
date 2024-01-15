@@ -11,7 +11,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     'h h h'
     'as as as'
@@ -99,5 +99,16 @@ img {
     height: auto;
     width: auto;
     float: none;
+}
+@media screen and (max-width: 600px){
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'h'
+    'as'
+    'ar'
+    'f';
+}
 }
 
